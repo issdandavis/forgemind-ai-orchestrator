@@ -1,0 +1,5 @@
+{
+  "name": "ForgeMind AI: Multi-Agent Development Orchestrator",
+  "description": "ForgeMind AI orchestrates autonomous multi-agent workflows across Shopify Command Center, AWS Cloud, and the AI Studio ecosystem. Featuring the Triangle Update Pattern for bidirectional repo synchronization and a visual multi-agent dashboard for real-time lifecycle monitoring.",
+  "requestFramePermissions": []
+}
