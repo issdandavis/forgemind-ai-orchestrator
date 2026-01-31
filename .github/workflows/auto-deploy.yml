@@ -74,7 +74,7 @@ jobs:
 
     - name: Notify Slack
       uses: 8398a7/action-slack@v3
-      if: always() && secrets.SLACK_WEBHOOK != ''
+      if: always()
       with:
         status: ${{ job.status }}
         text: 'Deployment ${{ job.status }}'
@@ -82,7 +82,6 @@ jobs:
       continue-on-error: true
 
     - name: Trigger dependent repos
-      if: secrets.GH_PAT != ''
       run: |
         curl -X POST \
           -H "Authorization: token ${{ secrets.GH_PAT }}" \
